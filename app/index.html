@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Friday Finder — Real Black Friday Deals, Checked Today</title>
+<meta name="description" content="42 real Black Friday and Cyber Monday deals, each checked on Nov 27, 2026 against its store or a deals source that names the store. Search and filter by category, store and discount, with an honest verdict on every deal.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">%</span>
+      <span class="brand-name">Friday Finder</span>
+    </a>
+    <p class="topbar-tag">Real Black Friday deals, checked today — no inflated “was” prices.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero" id="hero">
+    <p class="hero-kicker">Black Friday · November 27, 2026 · Cyber Monday Nov 30</p>
+    <h1>Every deal checked today.<br>Every discount real.</h1>
+    <p class="hero-sub">42 Black Friday and Cyber Monday deals from Amazon, Walmart, Best Buy and Target. Each one lists its store, its sale price, its usual price, when it was checked, and the source that showed the price — plus an honest verdict on whether it is really a deal.</p>
+    <div class="stats" id="stats" aria-label="Deal summary"></div>
+  </section>
+
+  <section class="compare" id="compare" aria-label="Same product, different stores"></section>
+
+  <section class="controls" aria-label="Search and filter deals">
+    <div class="search-row">
+      <label class="search-box">
+        <span class="visually-hidden">Search deals</span>
+        <input id="search" type="search" placeholder="Search a product or brand — try “airpods”" autocomplete="off">
+      </label>
+      <label class="control">
+        <span>Sort</span>
+        <select id="sort">
+          <option value="discount">Biggest discount first</option>
+          <option value="saving">Biggest saving first</option>
+          <option value="price-asc">Lowest price first</option>
+          <option value="price-desc">Highest price first</option>
+          <option value="verdict">Best verdict first</option>
+        </select>
+      </label>
+    </div>
+    <div class="filter-row" id="category-filters" role="group" aria-label="Filter by category"></div>
+    <div class="filter-row filter-row-2">
+      <div class="chip-group" id="store-filters" role="group" aria-label="Filter by store"></div>
+      <div class="chip-group" id="discount-filters" role="group" aria-label="Filter by discount"></div>
+      <label class="toggle">
+        <input type="checkbox" id="only-true">
+        <span>True deals only</span>
+      </label>
+    </div>
+    <p class="result-line" id="result-line" aria-live="polite"></p>
+  </section>
+
+  <section id="view" aria-live="polite"></section>
+
+  <section class="method" aria-label="How deals are checked">
+    <h2>How a deal earns its verdict</h2>
+    <div class="method-grid">
+      <div>
+        <h3>Checked, not copied</h3>
+        <p>Every price was read on November 27, 2026, at the store named or in a deals source that names the store. The source is listed on every card, with the check date.</p>
+      </div>
+      <div>
+        <h3>TRUE DEAL</h3>
+        <p>An all-time low, or a cut of 40% or more that sources confirm is the lowest price tracked this year. These are the deals worth acting on first.</p>
+      </div>
+      <div>
+        <h3>GOOD PRICE</h3>
+        <p>A solid, real saving — but not a record. Worth buying if you need the item; not worth rushing for.</p>
+      </div>
+      <div>
+        <h3>What we do not list</h3>
+        <p>No “was” price that was never the real price, no product no store showed, and no deal we did not check today. Prices move all day on Black Friday — confirm the price at checkout before you buy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sources" aria-label="Sources">
+    <h2>Where the prices were read</h2>
+    <ul id="source-list"></ul>
+    <p class="fineprint">Prices are US dollars, as listed on November 27, 2026. Sale ends vary by store; most run through Cyber Monday, November 30. Friday Finder is an independent guide and is not affiliated with Amazon, Walmart, Best Buy, Target, or any brand listed. Product links go to each store’s own listing for the product.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Friday Finder — built for Black Friday 2026. All 42 deals checked Nov 27, 2026.</p>
+  </div>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
